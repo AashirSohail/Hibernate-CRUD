@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?> 
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+	<class name = "Person" table = "per">
+		<id name = "id" column = "id" type = "int">
+			<generator class = "assigned"></generator>
+		</id>
+		
+		<property name = "name" type = "string" column = "Name"></property>
+		<property name = "father_name" column = "fatherName" type = "string"></property>
+		<property name = "organization" column = "Organization" type = "string"></property>
+		<property name = "mobile" column = "Mobile" type = "string"></property>
+	</class>
+</hibernate-mapping>
